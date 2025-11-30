@@ -34,6 +34,10 @@ Beyond the common python libraries for data science like: pandas, numpy, matplot
 - RandomForestClassifier for classification model
 - RandomizedSearchCV to evaluate and fine-tune the model to get the best fit
 
+## Documents
+
+The main documents for this project is /starter/starter.ipynb
+
 ## Resources
 
 Git repository for this project is located here: https://github.com/mshi-so/dsnd-course2.git
