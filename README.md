@@ -1,54 +1,48 @@
-# README Template
+# Predicting whether if a Customer will Recommend StyleSense
 
-Below is a template provided for use when building your README file for students.
+## Summary
 
-# Project Title
+StyleSense is a rapidly growing online women's clothing retailer. With the customer base exploding in recent months, our Customer Service team cannot keep up with the reviews left on our website to understand whether if a customer will recommend our brand to others, especially for the reviews that are not explicitly saying that.
 
-Project description goes here.
+As a data scientist, I'll build a machine learning model to predict (label) whether if a customer will reccommend based on the data we have collected.
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+To start, I have a dataset with 18,000+ records on these features:
+Clothing ID
+- Age
+- Title (Review)
+- Review Text
+- Positive Feedback Count
+- Devision Name
+- Department Name
+- Class Name
+- Reccomend IND
 
-### Dependencies
+The **Reccomend ID** column contains the data that was previously labeled for whether if a customer will reccomend.
+
+## Libraries Used
+
+Beyond the common python libraries for data science like: pandas, numpy, matplotlib, seaborn, since this dataset contains numerical, categorical and text values, I will be also employing these libraries:
+- Pipeline to create preprocessing pipelines
+- SimpleImputer to fill in empty values
+- MinMaxScaler to normalize numeric values
+- OneHotEncorder for categorical values
+- SpaCy for lemmatization and tokenization
+- TfidfVectorizer for vectorizing text values
+- ColumnTransformer to apply preprocssing steps to columns
+- RandomForestClassifier for classification model
+- RandomizedSearchCV to evaluate and fine-tune the model to get the best fit
+
+## Resources
+
+Git repository for this project is located here: https://github.com/mshi-so/dsnd-course2.git
+
+You can clone this project:
 
 ```
-Examples here
+git clone https://github.com/mshi-so/dsnd-course2.git
 ```
-
-### Installation
-
-Step by step explanation of how to get a dev environment running.
-
-List out the steps
-
-```
-Give an example here
-```
-
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
-
-```
-Examples here
-```
-
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
 
 ## License
 
